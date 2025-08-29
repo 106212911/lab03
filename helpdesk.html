@@ -28,7 +28,8 @@
    <p>Check Blackboard for when CWA tutors will be there.</p>
 
 
-	<fieldset>
+<form>
+   <fieldset>
         <legend>Student Details</legend>
 	<p><label for="Student ID">Student ID</label> 
 		<input type="text" name= "Student ID" id="Student ID" maxlength="10" size="20" required="required"/>
@@ -40,10 +41,13 @@
 
             <label for="Family Name">Family Name</label> 
 		    <input type="text" name= "Family Name" id="Family Name" maxlength="15" size="10" required="required"/>
+   </fieldset>
+
 
     </p>
 		
-		<fieldset>
+	
+    <fieldset>
 			<legend>Your Unit</legend>    
 			<p><label for="COS10011">COS10011</label> 
 				<input type="radio" id="COS10011" name="subject" value="COS10011"/>
@@ -60,11 +64,14 @@
             <option value=""> Mr Arokia</option>
             <option value=""> Ms Kavitha</option>
          </select>
+       
 
 		</p>
 			</p>
 		</fieldset>
-		<fieldset>
+		
+       
+        <fieldset>
 			<legend>Issue</legend>  
 			    <label for="HTML">HTML</label> 
 				<input type="checkbox" id="HTML" name="category[]" value="HTML" checked="checked"/>
@@ -87,7 +94,8 @@
 
         </fieldset>
 
-        <fieldset>
+
+    <fieldset>
             <legend>Preferred Date/Time</legend>  
              <label for="Date">Date</label> 
             <input type="text" name= "dmy" id="dmy" maxlength="20" size="10" required placeholder="dd/mm/yyyy"/><br>
@@ -96,6 +104,7 @@
             <label for="Time">Time</label>
             <input type="text" name="T" id="T" maxlength="20" size="10" required placeholder="00:00"/>
         </fieldset>
+   
 
 
     <input type= "submit" value="Book"/>
